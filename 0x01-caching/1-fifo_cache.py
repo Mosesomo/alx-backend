@@ -21,10 +21,9 @@ class FIFOCache(BaseCaching):
             len_items = len(self.cache_data)
             if len_items >= BaseCaching.MAX_ITEMS\
                and key not in self.cache_data:
-                discard_key = self.data_cache.pop(0)
-                print('DISCARD: {}'.format(discard_key))
-                del self.cache_data[discard_key]
-                del discard_key
+                print('DISCARD: {}'.format(self.data_cache[0]))
+                del self.cache_data[self.data_cache[0]]
+                del self.data_cache[0]
             self.data_cache.append(key)
             self.cache_data[key] = item
 
