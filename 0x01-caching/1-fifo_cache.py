@@ -9,7 +9,7 @@ class FIFOCache(BaseCaching):
     def __init__(self):
         '''Initaializing parent class'''
 
-        super().__init__()
+        BaseCaching.__init__()
         self.data_cache = []
 
     def put(self, key, item):
