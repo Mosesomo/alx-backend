@@ -9,7 +9,7 @@ class FIFOCache(BaseCaching):
     def __init__(self):
         '''Initaializing parent class'''
 
-        BaseCaching.__init__()
+        super().__init__()
         self.data_cache = []
 
     def put(self, key, item):
@@ -30,7 +30,7 @@ class FIFOCache(BaseCaching):
     def get(self, key):
         '''Get an item by key'''
 
-        if key is not None and key in self.cache_data.keys():
-            self.cache_data[key]
+        if key and key in self.cache_data.keys():
+            return self.cache_data[key]
         else:
             return None
