@@ -9,7 +9,7 @@ class BasicCache(BaseCaching):
     def __init__(self):
         '''Initializing parent class'''
 
-        super().__init__()
+        super().__init__(self)
 
     def put(self, key, item):
         '''Does nothing'''
