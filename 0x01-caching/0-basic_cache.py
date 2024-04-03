@@ -6,6 +6,11 @@ from base_caching import BaseCaching
 class BasicCache(BaseCaching):
     '''Caching system that inherits from BaseCaching'''
 
+    def __init__(self):
+        '''Initializing parent class'''
+
+        super().__init__()
+
     def put(self, key, item):
         '''Does nothing'''
 
