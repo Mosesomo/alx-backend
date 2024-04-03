@@ -32,5 +32,4 @@ class FIFOCache(BaseCaching):
 
         if key is not None and key in self.cache_data:
             self.cache_data[key]
-        else:
-            return None
+        return None
