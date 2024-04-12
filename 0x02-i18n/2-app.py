@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''i18n internationalization'''
 from flask import Flask, render_template, request
-from flask_babel import Babel, get_locale
+from flask_babel import Babel
 
 
 class Config:
