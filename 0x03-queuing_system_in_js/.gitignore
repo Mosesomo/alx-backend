@@ -1,0 +1,7 @@
+# ignoring node modules
+/node_modules/
+
+# ignoring json files
+*.json
+
+.babelrc
